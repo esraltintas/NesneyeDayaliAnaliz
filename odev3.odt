@@ -1,0 +1,43 @@
+NesneyeDayaliAnaliz
+===================
+
+
+	
+
+USE CASE 1
+
+ 
+Müşterinin sisteme yeni bir kargo işi eklemesi, 
+
+Primary Actor: Müşteri
+	Ön Koşul: Müşteri sisteme giriş yapmış olmalı.
+	Son Koşul:Müşteri sisteme yeni bir kargo işi eklemiş olmalı.
+
+	Ana Başarı Senaryosu
+1.	Müşteri sisteme kullanıcı parolasını girer.
+2.	Müşterinin kullanıcı parolası onaylandıktan sonra, müşteri kargo ekleme kısmına giriş yapar.
+3.	Müşteri taşınacak ürünün türünü ve detaylarını sisteme girer.
+4.	Sistem  müşterinin kargosunu onaylar.
+5.	Müşteri, sistemden çıkış yapar.
+
+            Alternatif Senaryolar
+
+	*A- Sistem herhangi bir anda çökerse,
+1.	Sistem yeniden başlatılır.
+2.	İşlem 1. adımdan devam eder.
+
+       1 A-).Sistemde giriş yapan müşterinin kullanıcı parolası tanımlı olmayabilir.
+		1 A 1-).Müşteri kullanıcı parolasını tekrar girer.
+			Müşteri kullanıcı parolası yanlış ise
+			A-).Sistem müşteriye kullanıcı olmadığı bilgisini geri döndürür.
+B-).Sistem müşteriyi, müşteri ekleme sayfasına yönlendirir.
+C-).Müşteri bilgilerini girerek sisteme üye olur.
+D-).Müşteri, müşteri ekleme sayfasından çıkışını yapar.
+
+          3 A-). Müşteri ürün türünü veya detaylarını eksik girmiş olabilir.
+		3 A 1-).Sistem kargo onayını vermez ve müşteriyi eksik bilgi doldurduğu kısma yönlendirir.
+		3 A 2-).Müşteri eksik kısımları tekrar doldurur.
+	
+        
+
+
